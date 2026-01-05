@@ -10,3 +10,6 @@ all: $(TARGET)
 
 $(TARGET): $(SRCS)
 	$(CXX) $(CXXFLAGS) $^ -o $@ $(LDFLAGS)
+
+conn: testConnection.cc
+	$(CXX) $(CXXFLAGS) $^ -o $@ $(LDFLAGS)

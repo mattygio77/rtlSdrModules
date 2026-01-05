@@ -50,7 +50,7 @@ int main()
     // RingBuffer rb(8 * 16384);  // 8 USB buffers
     std::thread dsp(dsp_worker);
 
-    rtlsdr_read_async(dev, rtlsdr_callback, &rb, 0, 16384);
+    // rtlsdr_read_async(dev, rtlsdr_callback, &rb, 0, 16384);
 
     rtlsdr_close(dev);
 }
